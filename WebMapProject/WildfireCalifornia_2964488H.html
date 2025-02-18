@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>WEBMAP_PROJECT_WILDFIRE_CALIFORNIA_2964488H</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang='en'>
+ <head>
+  <meta charset='utf-8' />
+  <title>Wildfire Pots in California</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+<!-- Below are the two links (JS and CSS) for Mapbox -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+ </head>
+
+ <body>
+  <div id='map'></div> 
+  <div class="map-overlay">
+<!-- BLOCK_THEME -->    
+  <div class="theme">
+  <h1>California 2023 Wildfire Incident Map</h1>
+  </div>
+<!-- BLOCK_MONTH -->     
+  <div class="select_1">   
+  <h2>Month: <label id='active-month'>ALL</label></h2>
+  <input id='slider' class='row' type='range' min='0' max='12' step='1' value='0' />
+  </div>
+<!-- BLOCK_CLASSIFICATION -->   
+  <div class="select_2">
+  <h2>Fire Level</h2>
+  <div class="col" id='filters'>
+  <input id='all' type='radio' name='toggle' value='all' checked='checked'>
+  <label for='all'>All</label>   
+  <input id='a' type='radio' name='toggle' value='a'>
+  <label for='a'>A</label>   
+  <input id='b' type='radio' name='toggle' value='b' >
+  <label for='b'>B</label>
+  <input id='c' type='radio' name='toggle' value='c' >
+  <label for='c'>C</label>
+  <input id='d' type='radio' name='toggle' value='d' >
+  <label for='d' >D</label>
+  <input id='e' type='radio' name='toggle' value='e' >
+  <label for='e' >E</label>
+  <input id='f' type='radio' name='toggle' value='f' >
+  <label for='f' >F</label>
+  <input id='g' type='radio' name='toggle' value='g' >
+  <label for='g' >G</label>
+  <input id='h' type='radio' name='toggle' value='h' >
+  <label for='h' >H</label>
+  <input id='i' type='radio' name='toggle' value='i' >
+  <label for='i' >I</label>   
+  </div>  
+<!-- BLOCK_COUNTY --> 
+ <div class="search">
+ <ul id="panel"></ul>
+ </div> 
+</div> 
+
+<!-- BLOCK_GEOCODER -->    
+ <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'>
+ </script>
+ <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />    
+ </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
